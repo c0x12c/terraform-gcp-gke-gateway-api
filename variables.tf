@@ -32,3 +32,9 @@ variable "ext_gateway_class_name" {
   type        = string
   default     = "gke-l7-global-external-managed"
 }
+
+variable "enabled_field_manager" {
+  description = "Specifies whether to enable field manager for the resource."
+  type        = bool
+  default     = false
+}
