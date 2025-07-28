@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0]() (2025-07-28)
+
+### Features
+
+* Move to Terraform registry
+* Add field_manager to avoid field manager conflict
+
 ## [0.1.4]() (2024-12-05)
 
 ### Features

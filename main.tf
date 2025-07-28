@@ -43,6 +43,14 @@ resource "kubernetes_manifest" "external_gateway" {
     }
   }
 
+  dynamic "field_manager" {
+    for_each = var.enabled_field_manager ? [1] : []
+    content {
+      name            = "terraform"
+      force_conflicts = true
+    }
+  }
+
   depends_on = [
     kubernetes_namespace.gateway_api
   ]

@@ -8,7 +8,8 @@ This Terraform module provisions a Google Kubernetes Engine (GKE) Gateway API wi
 
 ```hcl
 module "gke_autopilot" {
-  source  = "github.com/spartan-stratos/terraform-modules//gcp/gke-gateway-api?ref=v0.1.0"
+  source  = "c0x12c/gke-gateway-api/gcp"
+  version = "~> 1.0.0"
 
   ext_gateway_name = "external-gateway"
   create_namespace = true
